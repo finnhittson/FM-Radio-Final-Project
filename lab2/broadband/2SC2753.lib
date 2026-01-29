@@ -1,0 +1,30 @@
+*-------------------------- 2SC2753 TOSHIBA RF BJT---------------------------
+*
+*---- Derived from 2SC3302 model created by Ali Hajimiri; Package L and rb updated by T. Lee-----
+*---- Rev'd 27 March 2021 to equalize lead inductances (Lc was 1.5nH in original)
+
+.subckt X2SC2753 c1 b1 e1
+
+Lb	b1	b	0.93n
+Lc	c1	c	0.93n
+Le	e1	e	0.93n
+Cpkg_be	b	e	0.35p
+Cpkg_ce	c	e	0.35p
+Q1	c	b	e	2SC2753
+
+.Model  2SC2753  NPN (
++bf=80
++vaf=50
++ise=2e-14
++ne=1.55
++nf=0.9953
++tf=30p
++rb=7
++cje=1.3p
++mje=0.33
++cjc=1p
++mjc=0.33 	
++ikf=400m
++nkf=0.6)
+
+.ends

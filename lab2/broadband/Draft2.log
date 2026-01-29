@@ -1,0 +1,25 @@
+Circuit: * C:\Users\pig\Documents\ee251\lab2\broadband\Draft2.asc
+
+Direct Newton iteration for .op point succeeded.
+
+88_gain: mag(v(out)/v(in))=(18.0763dB,0°) at 8.8e+007
+98_gain: mag(v(out)/v(in))=(18.2373dB,0°) at 9.8e+007
+108_gain: mag(v(out)/v(in))=(18.2694dB,0°) at 1.08e+008
+
+
+Date: Tue Jan 27 22:12:44 2026
+Total elapsed time: 0.040 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 5
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 15
+fillins = 4
+solver = Normal
+Matrix Compiler1:      66 opcodes
+Matrix Compiler2: 1.25 KB object code size
