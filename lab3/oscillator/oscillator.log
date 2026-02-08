@@ -1,0 +1,29 @@
+Circuit: * C:\Users\pig\Documents\ee251\lab3\oscillator\oscillator.asc
+
+Warning: Multiple definitions of model "2scr375p" Type: BJT
+Warning: Multiple definitions of model "bc857b" Type: BJT
+Warning: Multiple definitions of model "bc847c" Type: BJT
+Warning: Multiple definitions of model "bc847b" Type: BJT
+WARNING: Node N007 is floating.
+WARNING: Node NC_01 is floating.
+
+WARNING: Less than two connections to node NC_01.  This node is used by C6.
+Direct Newton iteration for .op point succeeded.
+
+Date: Sat Feb 07 22:59:47 2026
+Total elapsed time: 7.744 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 8353180
+traniter = 8353173
+tranpoints = 3324810
+accept = 2371450
+rejected = 953360
+matrix size = 16
+fillins = 6
+solver = Normal
+Matrix Compiler1: 1.10 KB object code size  0.1/0.1/[0.1]
+Matrix Compiler2: off  [0.1]/0.1/0.1
+
