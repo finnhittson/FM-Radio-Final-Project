@@ -1,0 +1,21 @@
+Circuit: * C:\Users\pig\Desktop\temp.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Mon Feb 09 19:51:48 2026
+Total elapsed time: 0.345 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 39348
+traniter = 39334
+tranpoints = 18973
+accept = 12417
+rejected = 6556
+matrix size = 12
+fillins = 4
+solver = Normal
+Matrix Compiler1:      48 opcodes  0.1/[0.1]/0.1
+Matrix Compiler2: off  [0.1]/0.1/0.1
+
