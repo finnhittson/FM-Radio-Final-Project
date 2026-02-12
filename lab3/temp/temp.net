@@ -1,23 +1,25 @@
 * C:\Users\pig\Documents\ee251\lab3\temp\temp.asc
-XX1 N002 N006 out X2SC2753
-C4 out 0 60p
-L3 N001 N002 150n
+XX1 N003 N005 N008 X2SC2753
+C4 out 0 50p
+L3 N002 N003 150n
 V4 N001 0 10
-R4 N005 N004 10k
-V5 N005 0 10
-C5 N002 out 22p
-D2 N007 N004 BBY40
-R1 NC_01 N002 850
-R2 out 0 1k
-R3 N006 0 1.1k
-R5 N001 N006 5k
-C1 N003 N004 10p
+R4 N007 N006 10k
+V5 N007 0 1
+C5 N003 out 20p
+D2 N009 N006 BBY40
+R1 N002 N003 850
+R2 N008 0 500
+R3 N005 0 1.1k
+R5 N001 N005 5k
+C2 out N008 1n
+R6 N002 N001 500
+C1 N002 0 1n
+C3 N005 0 1n
+C6 N004 out 20p
 .model D D
 .lib C:\Users\pig\Documents\LTspiceXVII\lib\cmp\standard.dio
 .include 2SC2753.sub
-* .model MV2201 D(Is=1.365p Rs=1 Cjo=14.93p M=.4261 Vj=.75 Isr=16.02p Nr=2 Bv=25 Ibv=10u Vpk=25 mfg=OnSemi type=varactor)
-* .model MV2201 D(Is=50n Rs=1 Cjo=19p M=.4261 Vj=.75 Isr=60n Nr=2 Bv=30 Ibv=10u Vpk=25 mfg=OnSemi type=varactor)
-.tran 2u
+.tran 0 0.5u 0 10p
 .MODEL BBY40 D IS=7.417E-15 N=1.058 RS=.1259 XTI=3
 +      EG=1.11 CJO=64.39E-12 M=1.013 VJ=2.566 FC=.5 BV=45.12
 +      IBV=.1232 TT=215E-9

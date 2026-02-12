@@ -1,0 +1,25 @@
+Circuit: * C:\Users\pig\Documents\ee251\lab3\mixer\mixer.asc
+
+Warning: Multiple definitions of model "2scr375p" Type: BJT
+Warning: Multiple definitions of model "bc857b" Type: BJT
+Warning: Multiple definitions of model "bc847c" Type: BJT
+Warning: Multiple definitions of model "bc847b" Type: BJT
+Direct Newton iteration for .op point succeeded.
+
+Date: Wed Feb 11 10:34:01 2026
+Total elapsed time: 0.037 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 4914
+traniter = 4910
+tranpoints = 1933
+accept = 1459
+rejected = 474
+matrix size = 12
+fillins = 1
+solver = Normal
+Matrix Compiler1: 722 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler2: 902 bytes object code size  0.1/0.1/[0.1]
+
