@@ -1,26 +1,25 @@
 Circuit: * C:\Users\pig\Documents\ee251\lab3\mixer-oscillator\mixer-oscillator.asc
 
-WARNING: Node LO is floating.
-WARNING: Node NC_01 is floating.
-WARNING: Node N015 is floating.
+WARNING: Node N013 is floating.
+WARNING: Node N016 is floating.
 
-WARNING: Less than two connections to node NC_01.  This node is used by C6.
+WARNING: Less than two connections to node NC_01.  This node is used by V3.
 Direct Newton iteration for .op point succeeded.
 
-Date: Fri Feb 13 23:28:33 2026
-Total elapsed time: 1.508 seconds.
+Date: Fri Feb 13 23:47:43 2026
+Total elapsed time: 2.718 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 557357
-traniter = 557348
-tranpoints = 259797
-accept = 174965
-rejected = 84832
-matrix size = 31
-fillins = 10
+totiter = 514962
+traniter = 514953
+tranpoints = 242180
+accept = 163203
+rejected = 78977
+matrix size = 33
+fillins = 16
 solver = Normal
-Matrix Compiler1: 2.29 KB object code size  0.3/0.2/[0.1]
-Matrix Compiler2: 2.52 KB object code size  0.5/0.2/[0.2]
+Matrix Compiler1: 2.63 KB object code size  0.3/0.2/[0.1]
+Matrix Compiler2: off  [0.2]/0.2/0.2
 
