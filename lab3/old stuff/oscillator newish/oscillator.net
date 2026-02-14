@@ -1,0 +1,28 @@
+* C:\Users\pig\Documents\ee251\lab3\old stuff\oscillator newish\oscillator.asc
+R4 N007 N006 10k
+V5 N007 0 3
+D2 N009 N006 BBY40
+XX2 N003 N005 out1 X2SC2753
+C7 out1 0 100p
+L1 N002 N003 100n
+V1 N001 0 10
+C8 N003 out1 10p
+R8 out1 0 100
+R9 N004 0 1.1k
+R10 N001 N004 5k
+R11 N002 N001 500
+C10 N002 0 1n
+C11 N004 0 1n
+R1 N005 N004 100
+C1 N003 N008 1n
+C2 N008 0 10p
+.model D D
+.lib C:\Users\pig\Documents\LTspiceXVII\lib\cmp\standard.dio
+.include 2SC2753.sub
+.tran 1u
+.MODEL BBY40 D IS=7.417E-15 N=1.058 RS=.1259 XTI=3
++      EG=1.11 CJO=64.39E-12 M=1.013 VJ=2.566 FC=.5 BV=45.12
++      IBV=.1232 TT=215E-9
++      ISR=1.731E-12 NR=2.27 IKF 9.882
+.backanno
+.end
