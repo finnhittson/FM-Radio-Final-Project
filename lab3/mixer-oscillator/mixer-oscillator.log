@@ -6,20 +6,20 @@ WARNING: Less than two connections to node NC_01.  This node is used by R12.
 WARNING: Less than two connections to node NC_02.  This node is used by V3.
 Direct Newton iteration for .op point succeeded.
 
-Date: Sat Feb 14 18:24:53 2026
-Total elapsed time: 1.867 seconds.
+Date: Sat Feb 14 23:19:22 2026
+Total elapsed time: 10.557 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 525137
-traniter = 525132
-tranpoints = 251977
-accept = 170376
-rejected = 81601
+totiter = 5573687
+traniter = 5573682
+tranpoints = 2677879
+accept = 1811477
+rejected = 866402
 matrix size = 29
 fillins = 12
 solver = Normal
-Matrix Compiler1: 2.26 KB object code size  0.3/0.2/[0.1]
-Matrix Compiler2: off  [0.1]/0.2/0.2
+Matrix Compiler1: 2.26 KB object code size  0.2/0.2/[0.1]
+Matrix Compiler2: off  [0.1]/0.2/0.1
 
