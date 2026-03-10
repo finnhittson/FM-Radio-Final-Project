@@ -1,0 +1,64 @@
+* C:\Users\pig\Documents\ee251\lab3\mixer-oscillator\mixer-oscillator.asc
+C2 N003 IF 461p
+L1 N003 IF 480n
+C3 0 N017 100n
+C8 N010 0 1n
+R7 N010 0 1k
+R8 N016 0 1k
+R9 N001 N010 5k
+C9 LO 0 18p
+C§10p N006 LO 40p
+C11 N002 0 1n
+C12 N007 NC_01 1n
+L2 N001 N006 100n
+XX2 N006 N011 N016 X2SC2753
+V4 N001 0 10
+R12 N015 NC_02 100k
+V5 N015 0 10
+R6 N011 N010 100
+V2 RF 0 SINE(0 10m 106Meg) Rser=50
+C13 LO N016 100n
+R1 N005 N008 3k
+R13 N001 N005 400
+R15 LO_buf 0 602
+R16 N008 0 6.19k
+C5 N008 LO 100n
+XX3 N005 N008 LO_buf X2SC2753
+R17 N012 LO_buf 50
+C6 N013 N012 100n
+XX1 IF N013 0 X2SC2753
+R2 RF N017 50
+C1 N013 RF 100n
+R3 N001 N003 180
+C4 N001 N003 100n
+R5 N004 N009 2k
+R11 N001 N004 175
+R14 N014 0 200
+R18 N009 0 6k
+C7 N009 IF 10n
+XX4 N004 N009 N014 X2SC2753
+R21 N003 N013 1k
+R22 N013 0 500
+R4 N003 IF 800
+C14 IF_buf N014 100n
+R20 IF_buf 0 50
+C10 N016 0 4p
+R19 NC_03 N006 1k
+.tran 0 20.025u 20u
+.include 2sc2753.sub
+.MODEL BBY40 D IS=7.417E-15 N=1.058 RS=.1259 XTI=3
++      EG=1.11 CJO=64.39E-12 M=1.013 VJ=2.566 FC=.5 BV=45.12
++      IBV=.1232 TT=215E-9
++      ISR=1.731E-12 NR=2.27 IKF 9.882
+;.ac oct 100 10Meg 1Gig
+;.net I(RL) V2
+* gain: change bias, resonance tank
+* colpitts oscillator
+* oscillator buffer
+* mixer
+* mixer buffer
+.meas tran T1 find time when V(LO)=0.9 rise 1
+.meas tran T2 find time when V(LO)=0.9 rise 2
+.meas tran Frequency param 1/(T2-T1)/1e6
+.backanno
+.end

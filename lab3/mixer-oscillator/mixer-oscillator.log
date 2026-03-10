@@ -1,26 +1,40 @@
 Circuit: * C:\Users\pig\Documents\ee251\lab3\mixer-oscillator\mixer-oscillator.asc
 
 WARNING: Node LO is floating.
-WARNING: Node N016 is floating.
+WARNING: Node N002 is floating.
+WARNING: Node N007 is floating.
+WARNING: Node NC_01 is floating.
 
-WARNING: Less than two connections to node NC_01.  This node is used by R12.
+WARNING: Less than two connections to node N002.  This node is used by C11.
+WARNING: Less than two connections to node N007.  This node is used by C12.
+WARNING: Less than two connections to node NC_01.  This node is used by C12.
+WARNING: Less than two connections to node NC_02.  This node is used by R12.
+WARNING: Less than two connections to node NC_03.  This node is used by R19.
 Direct Newton iteration for .op point succeeded.
 
-Date: Mon Feb 23 22:25:41 2026
-Total elapsed time: 5.671 seconds.
+
+Measurement "t1" FAIL'ed
+
+Measurement "t2" FAIL'ed
+
+Measurement "frequency" FAIL'ed
+
+
+Date: Sun Mar 08 17:29:41 2026
+Total elapsed time: 3.616 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 1942702
-traniter = 1942696
-tranpoints = 942185
-accept = 642122
-rejected = 300063
-matrix size = 41
-fillins = 43
+totiter = 930346
+traniter = 930339
+tranpoints = 434501
+accept = 290600
+rejected = 143901
+matrix size = 43
+fillins = 30
 solver = Normal
-Thread vector: 1.4/2.4[1] 1.1/1.0[2] 0.2/0.4[1] 0.1/0.6[1]  2592/500
-Matrix Compiler1: 5.25 KB object code size  0.9/0.3/[0.2]
-Matrix Compiler2: off  [0.2]/0.3/0.3
+Thread vector: 1.8/1.9[1] 1.5/1.2[2] 0.3/0.4[1] 0.1/0.6[1]  2592/500
+Matrix Compiler1: 4.73 KB object code size  0.6/0.4/[0.2]
+Matrix Compiler2: 4.01 KB object code size  0.3/0.3/[0.3]
 
