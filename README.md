@@ -26,12 +26,3 @@ The second block was our super heterodyne mixer and oscillator combo. The point 
 
 The final block of our radio is an IF amplifier and a demodulation stage. The IF amplifier uses two coupled inductors to achive a steep roll off over a narrow band. This was made by designing a coupled resonant tank with a quality factor higher than what was required, winding two inductors using thick wire to get a higher Q, and then spoiling the Q by adding series resistance to the inductor which gives the maximally flat response needed for the IF amplifier. The demod stage was just then a diode and capacitor pair used to extract the envelope off the amplified signal. Below is our scheamtic and image of our assembled boards. For a more detailed dicussion of the full design and our boards performance please read the lab report which can be found in `lab4/`.
 ![IFamp and mixer schematic and board](images/ifamp_schematic_and_board.png)
-
-
-
-
-
-
-
-
-
