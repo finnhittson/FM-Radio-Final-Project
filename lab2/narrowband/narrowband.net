@@ -1,0 +1,35 @@
+* C:\Users\pig\Documents\ee251\lab2\narrowband\narrowband.asc
+L1 N001 N002 30n
+C1 N001 N002 70p
+XQ1 N003 N004 N008 X2SC2753
+V3 N001 0 10
+R6 N004 0 1k
+R2 N001 N002 50
+R3 N003 N005 750
+V1 in 0 AC 1 Rser=50
+R7 N002 N003 500
+R1 N005 N004 750
+C3 N005 0 1n
+C7 N002 N003 4n
+C8 out N003 1n
+R8 out 0 50
+C4 N004 N006 450p
+L2 N006 0 100n
+C2 N006 in 30p
+C5 N001 0 22µ
+V2 N008 0 0
+.lib 2SC2753.sub
+.ac dec 100 9.8Meg 980Meg
+.net I(R8) V1
+* .TEMP 0 10 20 30 50 80 100
+* L-Matching Network
+* DC Block
+* Biased to ~1V
+* Resonant tank\ntuned to 98MHz
+* Sets output point
+* Feedback network
+* Optional for stability\n~2-5 Ohms
+* DC Block
+* Decouple cap
+.backanno
+.end
