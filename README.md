@@ -5,7 +5,7 @@ This repo documents the completed labs in EE 251 that were used to make an FM ra
 
 ## First Block - Broadband and Narrowband Amplifier
 
-The front end of our radio consists of a narrowband and broadband amplifier. The signal recieved off of the antenna is very small and needs to be gained up in order to do any signal processing and eventually hear a signal through a speaker. The broadband amplifier amplifies everything from DC to daylight and is used as a quick and easy way to get gain at the expense of gaining everything including the noise floor. The narrow band amplifier is used to selectivly gain the frequencies of interest and attenuate everything else. The following discussions point out a few of the design choices made in making these amplifiers. For a more detailed dicussion of the full design please read the lab report which can be found in `lab2/`.
+The front end of our radio consists of a narrowband and broadband amplifier. The signal recieved off of the antenna is very small and needs to be gained up in order to do any signal processing and eventually hear a signal through a speaker. The broadband amplifier amplifies everything from DC to daylight and is used as a quick and easy way to get gain at the expense of gaining everything including the noise floor. The narrow band amplifier is used to selectivly gain the frequencies of interest and attenuate everything else. The following discussions point out a few of the design choices made in making these amplifiers. For a more detailed dicussion of the full design and our boards performance please read the lab report which can be found in `lab2/`.
 
 ### Broadband Amplifier
 
@@ -19,9 +19,19 @@ The Narrowband amplifier uses a RLC tank circuit to selectivly gain frequencies 
 
 ## Second Block - Mixer and Colpitts Oscillator
 
-The second block was our super heterodyne mixer and oscillator combo. The point of this block is the mix the frequencies of interest down to a lower frequency (11.7MHz). This is done to make down stream signal processing easier since it is a lower frequency and it is now fixed. To generate our oscillations a Colpitts oscillator is used. Then by varying a varactor we can tune our Coplitts oscillator. We found it easier to design and build an oscillator for high side injection so our oscillator operated from 98.7MHz to 118.7MHz. These signals were then mixed with the incomming RF from the amplifiers at the base of the mixer. The mixer itself was another common emitter amplifier with a resonant tank as a load. The resnonant tank was tuned to operate at 11.7MHz. We also struggled with loading the oscillator once connected to the mixer which would kill our oscillations. To remedy this we buffered the the output of the oscillator and mixer to provide more robust isolations between these blocks and future blocks. Below i sour scheamtic and image of our assembled boards.
+The second block was our super heterodyne mixer and oscillator combo. The point of this block is the mix the frequencies of interest down to a lower frequency (11.7MHz). This is done to make down stream signal processing easier since it is a lower frequency and it is now fixed. To generate our oscillations a Colpitts oscillator is used. Then by varying a varactor we can tune our Coplitts oscillator. We found it easier to design and build an oscillator for high side injection so our oscillator operated from 98.7MHz to 118.7MHz. These signals were then mixed with the incomming RF from the amplifiers at the base of the mixer. The mixer itself was another common emitter amplifier with a resonant tank as a load. The resnonant tank was tuned to operate at 11.7MHz. We also struggled with loading the oscillator once connected to the mixer which would kill our oscillations. To remedy this we buffered the the output of the oscillator and mixer to provide more robust isolations between these blocks and future blocks. Below is our scheamtic and image of our assembled boards. For a more detailed dicussion of the full design and our boards performance please read the lab report which can be found in `lab3/`.
 ![Oscillator and mixer schematic and board](images/oscillator_mixer_schematic_and_board.png)
 
 ## Third Block - IF Amplifier and Demodulation
+
+The final block of our radio is an IF amplifier and a demodulation stage. The IF amplifier uses two coupled inductors to achive a steep roll off over a narrow band. This was made by designing a coupled resonant tank with a quality factor higher than what was required, winding two inductors using thick wire to get a higher Q, and then spoiling the Q by adding series resistance to the inductor which gives the maximally flat response needed for the IF amplifier. The demod stage was just then a diode and capacitor pair used to extract the envelope off the amplified signal. Below is our scheamtic and image of our assembled boards. For a more detailed dicussion of the full design and our boards performance please read the lab report which can be found in `lab4/`.
+![IFamp and mixer schematic and board](images/ifamp_schematic_and_board.png)
+
+
+
+
+
+
+
 
 
