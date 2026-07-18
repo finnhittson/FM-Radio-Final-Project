@@ -5,12 +5,17 @@ This repo documents the completed labs in EE 251 that were used to make an FM ra
 
 ## First Block - Broadband and Narrowband Amplifier
 
-The front end of our radio consists of a narrowband and broadband amplifier. The signal recieved off of the antenna is very small and needs to be gained up in order to do any signal processing and eventually hear a signal through a speaker. The broadband amplifier amplifies everything from DC to daylight and is used as a quick and easy way to get gain at the expense of gaining everything including the noise floor. The narrow band amplifier is used to selectivly gain the frequencies of interest and attenuate everything else.
+The front end of our radio consists of a narrowband and broadband amplifier. The signal recieved off of the antenna is very small and needs to be gained up in order to do any signal processing and eventually hear a signal through a speaker. The broadband amplifier amplifies everything from DC to daylight and is used as a quick and easy way to get gain at the expense of gaining everything including the noise floor. The narrow band amplifier is used to selectivly gain the frequencies of interest and attenuate everything else. The following discussions point out a few of the design choices made in making these amplifiers. For a more detailed dicussion of the full design please read the lab report which can be found in `lab2/`.
 
 ### Broadband Amplifier
 
-The broadband amplifier used the common emitter topology with feedback. To help get a wide bandwith the feedback is rolled off with a parallel capacitor which helps the amplifier have a flatter higher gain at higher frequencies. A detailed discussion of our design choises and the performance of our built broadband amplifier can be found in `Lab2/`. Below our schematic and an image of our assembled board.
+The broadband amplifier used the common emitter topology with feedback. To help get a wide bandwith the feedback is rolled off with a parallel capacitor which helps the amplifier have a flatter higher gain at higher frequencies. Below our schematic and an image of our assembled board.
 ![Broadband schematic and photo of assembled board](images/broadband_schematic_and_board.png)
+
+### Narrowband Amplifier
+
+The Narrowband amplifier uses a RLC tank circuit to selectivly gain frequencies of interest. The RLC tank is tuned to resonate at the FM band with a quality factor low enough to roughly amplify the entire band. The parallel RC combo below the tank is to set the output operating point and is also set to roll off at higher frequencies. Below our schematic and an image of our assembled board.
+![Narrowband schematic and photo of assembled board](images/narrowband_schematic_and_board.png)
 
 ## Second Block - Mixer and Colpitts Oscillator
 
