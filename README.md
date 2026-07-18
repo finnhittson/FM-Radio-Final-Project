@@ -10,7 +10,7 @@ The front end of our radio consists of a narrowband and broadband amplifier. The
 ### Broadband Amplifier
 
 The broadband amplifier used the common emitter topology with feedback. To help get a wide bandwith the feedback is rolled off with a parallel capacitor which helps the amplifier have a flatter higher gain at higher frequencies. A detailed discussion of our design choises and the performance of our built broadband amplifier can be found in `Lab2/`. Below our schematic and an image of our assembled board.
-![Broadband schematic and photo of assembled board.](lab2/images/broadband_schematic_and_board.png)
+![Broadband schematic and photo of assembled board.](images/broadband_schematic_and_board.png)
 
 ## Second Block - Mixer and Colpitts Oscillator
 
