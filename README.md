@@ -19,7 +19,8 @@ The Narrowband amplifier uses a RLC tank circuit to selectivly gain frequencies 
 
 ## Second Block - Mixer and Colpitts Oscillator
 
-
+The second block was our super heterodyne mixer and oscillator combo. The point of this block is the mix the frequencies of interest down to a lower frequency (11.7MHz). This is done to make down stream signal processing easier since it is a lower frequency and it is now fixed. To generate our oscillations a Colpitts oscillator is used. Then by varying a varactor we can tune our Coplitts oscillator. We found it easier to design and build an oscillator for high side injection so our oscillator operated from 98.7MHz to 118.7MHz. These signals were then mixed with the incomming RF from the amplifiers at the base of the mixer. The mixer itself was another common emitter amplifier with a resonant tank as a load. The resnonant tank was tuned to operate at 11.7MHz. We also struggled with loading the oscillator once connected to the mixer which would kill our oscillations. To remedy this we buffered the the output of the oscillator and mixer to provide more robust isolations between these blocks and future blocks. Below i sour scheamtic and image of our assembled boards.
+![Oscillator and mixer schematic and board](images/oscillator_mixer_schematic_and_board.png)
 
 ## Third Block - IF Amplifier and Demodulation
 
